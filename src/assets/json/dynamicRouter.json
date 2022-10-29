@@ -7,25 +7,11 @@
 			"component": "/home/index",
 			"meta": {
 				"icon": "HomeFilled",
-				"title": "首页",
+				"title": "Home",
 				"isLink": "",
 				"isHide": false,
 				"isFull": false,
 				"isAffix": true,
-				"isKeepAlive": true
-			}
-		},
-		{
-			"path": "/dataScreen",
-			"name": "dataScreen",
-			"component": "/dataScreen/index",
-			"meta": {
-				"icon": "Histogram",
-				"title": "数据大屏",
-				"isLink": "",
-				"isHide": false,
-				"isFull": true,
-				"isAffix": false,
 				"isKeepAlive": true
 			}
 		},
@@ -35,7 +21,7 @@
 			"redirect": "/proTable/useHooks",
 			"meta": {
 				"icon": "MessageBox",
-				"title": "超级表格",
+				"title": "Таблица",
 				"isLink": "",
 				"isHide": false,
 				"isFull": false,
@@ -699,6 +685,78 @@
 						"icon": "Menu",
 						"title": "Gitee 仓库",
 						"isLink": "https://gitee.com/laramie/Geeker-Admin",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					}
+				},
+				{
+					"path": "/link/github",
+					"name": "github",
+					"component": "/link/github/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "GitHub 仓库",
+						"isLink": "https://github.com/HalseySpicy/Geeker-Admin",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					}
+				},
+				{
+					"path": "/link/juejin",
+					"name": "juejin",
+					"component": "/link/juejin/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "掘金文档",
+						"isLink": "https://juejin.cn/post/7080820051422478366",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					}
+				},
+				{
+					"path": "/link/myBlog",
+					"name": "myBlog",
+					"component": "/link/myBlog/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "个人博客",
+						"isLink": "http://www.spicyboy.cn",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					}
+				}
+			]
+		},
+		{
+			"path": "/admin",
+			"name": "admin",
+			"redirect": "/admin/docCategories",
+			"meta": {
+				"icon": "Paperclip",
+				"title": "Administration",
+				"isLink": "",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": false,
+				"isKeepAlive": true
+			},
+			"children": [
+				{
+					"path": "/admin/docCategories",
+					"name": "gitee3",
+					"component": "/admin/docCategory/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "Рубрики",
+						"isLink": "",
 						"isHide": false,
 						"isFull": false,
 						"isAffix": false,

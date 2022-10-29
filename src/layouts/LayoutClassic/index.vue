@@ -5,7 +5,7 @@
 			<div class="header-lf">
 				<div class="logo flx-center">
 					<img src="@/assets/images/logo.svg" alt="logo" />
-					<span>Geeker Admin</span>
+					<span>{{ APP_TITLE }}</span>
 				</div>
 				<ToolBarLeft />
 			</div>
@@ -52,6 +52,7 @@ const globalStore = GlobalStore();
 const activeMenu = computed(() => route.path);
 const menuList = computed(() => authStore.showMenuListGet);
 const isCollapse = computed(() => globalStore.themeConfig.isCollapse);
+const APP_TITLE = import.meta.env.VITE_GLOB_APP_TITLE;
 </script>
 
 <style scoped lang="scss">
