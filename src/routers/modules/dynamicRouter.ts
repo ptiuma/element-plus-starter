@@ -22,7 +22,7 @@ export const initDynamicRouter = async () => {
 		if (!authStore.authMenuListGet.length) {
 			ElNotification({
 				title: "无权访问",
-				message: "当前账号无任何菜单权限，请联系系统管理员！",
+				message: "не имеет прав доступа！",
 				type: "warning",
 				duration: 3000
 			});

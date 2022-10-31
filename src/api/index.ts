@@ -67,7 +67,7 @@ class RequestHttp {
 				tryHideFullScreenLoading();
 				// * 登陆失效（code == 599）
 				if (data.code == ResultEnum.OVERDUE) {
-					ElMessage.error(data.msg);
+					ElMessage.error("ошибка 599");
 					globalStore.setToken("");
 					router.replace(LOGIN_URL);
 					return Promise.reject(data);
