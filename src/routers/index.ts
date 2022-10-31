@@ -72,7 +72,7 @@ router.afterEach(() => {
  * */
 router.onError(error => {
 	NProgress.done();
-	ElNotification.error({ title: "error", message: "error.message" });
+	ElNotification.error({ title: "error rout", message: error.message });
 });
 
 export default router;
